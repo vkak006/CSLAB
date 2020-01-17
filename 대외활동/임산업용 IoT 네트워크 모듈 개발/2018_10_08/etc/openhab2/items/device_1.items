@@ -1,0 +1,8 @@
+String state_1 "상태[%s]"
+String gateway_id_1 "설치 지역[%s]"
+String uid_1 "단말 고유번호[%s]"
+String name_1 "단말 명칭[%s]"
+String date_1 "단말 생성일자[%s]"
+String user_id_1 "사용자[%s]"
+String gps_lat_1 "설치위치(위도)[%s]"
+String gps_lon_1 "설치위치(경도)[%s]"

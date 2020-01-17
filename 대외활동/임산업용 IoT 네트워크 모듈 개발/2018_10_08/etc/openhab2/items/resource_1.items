@@ -1,0 +1,4 @@
+String sun_1 "일사량[%s]" <sun>
+String sun_1_name "제품명[%s]"
+String sun_1_company "제조사[%s]"
+
