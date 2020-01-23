@@ -77,6 +77,5 @@ urlDF.printSchema()
 urlDF.createOrReplaceTempView("url_tables")
 
 request_subquery2 = "SELECT b.uid, b.post_num, b.post_name, a.geoip, a.request FROM tables a, url_tables b WHERE a.request LIKE CONCAT('%','uid=',b.uid,'%')"
-
 uidDF = spark.sql(request_subquery2)
-uidDF.show()
+uidDF.coalesce(1).write.format("json").save("/output/urlDF_2")
